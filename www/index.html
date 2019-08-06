@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval';connect-src *;">
   <script src="components/loader.js"></script>
   <script src="components/jquery-3.4.1.min.js"></script>
   <script src="components/functions.js"></script>
+  <link href="open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="components/loader.css">
@@ -14,12 +15,25 @@
 </head>
 <body>
   <div class="fluid-container">
+     <span class="oi oi-menu btnMenu" id="abreMenu"></span>
+    <aside id="menu_options">
+      <span class="oi oi-x btnMenu" id="fechaMenu"></span>
+      <ul id="opcoes">
+        
+      </ul>
+    </aside>
+  </div>
+ 
+  
+
+  <!-- <div class="fluid-container">
     <div class="row">
       <div class="col-12 text-center">
-          <h1 style="margin-top:49vh;">Olar, World!</h1>
-          <button class="btn btn-success" id="alerta""> não clique aqui </button>
+
+          <button style="margin-top:45vh;" class="btn btn-info" id="btnCodigo">Ler Código</button><br><br>
+          <button class="btn btn-success" id="btnVibrar">Vibrar</button>
       </div>
     </div>
-  </div>
+  </div> -->
 </body>
 </html>

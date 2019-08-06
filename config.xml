@@ -3,9 +3,11 @@
   <name>OlarWorld</name>
   <description>Made with Monaca (http://monaca.mobi)</description>
   <author/>
+  <!-- <access origin="http://jdc.profrodolfo.com.br" /> -->
   <content src="index.html"/>
   <allow-navigation href="*"/>
   <allow-intent href="itms:*"/>
+  <access origin="*" />
   <allow-intent href="itms-apps:*"/>
   <preference name="loglevel" value="DEBUG"/>
   <preference name="AndroidLaunchMode" value="singleTop"/>
